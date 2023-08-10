@@ -1,6 +1,9 @@
-import { Card, Heading, Inset, Text } from "@radix-ui/themes";
+import { Card, Heading, Inset, Text, Box } from "@radix-ui/themes";
 import heroImage from "../../public/hero.jpg";
 import Image from "next/image";
+import house from "../../public/house.svg"
+import bed from "../../public/bed.svg"
+import bath from "../../public/bathroom.svg"
 
 export default function FeaturedCard() {
 
@@ -19,12 +22,19 @@ export default function FeaturedCard() {
                             </Text>
                             <Text weight="bold" size="6" className=" pt-4">110.000 €</Text>
                         </div>
-                        <div className=" flex flex-row gap-4 w-full bg-zinc-50 h-9 justify-start items-center pl-5">
-                            <p>x</p>
-                            <p>x</p>
-                            <p>x</p>
-                            <p>x</p>
-                            <p>x</p>
+                        <div className=" h-10 flex flex-row mt-4 bg-gray-100">
+                            <Box className=" flex flex-row justify-center items-center w-1/3 pr-4 pl-4">
+                                <Image height={18} src={house} alt="house" />
+                                <Text weight="bold" size="1" className=" pl-1">220 m2</Text>
+                            </Box>
+                            <Box className=" flex flex-row w-1/6 justify-center items-center pr-4 pl-4">
+                                <Image width={16} src={bed} alt="bedroom" />
+                                <Text weight="bold" size="1" className=" pl-2">4</Text>
+                            </Box>
+                            <Box className=" flex flex-row w-1/6 justify-center items-center pr-4 pl-4">
+                                <Image height={16} src={bath} alt="bathroom" />
+                                <Text weight="bold" size="1" className=" pl-2">3</Text>
+                            </Box>
                         </div>
                     </div>
                 </div>

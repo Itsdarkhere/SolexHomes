@@ -1,6 +1,6 @@
 import { Box, Heading, Section, Text } from "@radix-ui/themes";
 import Image from "next/image";
-import heroImage from "../../public/hero.jpg";
+import solexlogo from "../../public/solexlogo2.png";
 import Link from "next/link";
 import location from "../../public/location.svg";
 import phone from "../../public/phone.svg";
@@ -20,7 +20,7 @@ export default function Footer() {
                     <Box className=" flex flex-row items-start">
                         <Image width={8} src={location} alt="location" className=" pt-1" />
                         <Text className=" text-xs pl-1">
-                            Calle Jacinto Benavente, Nº 429640 Fuengirola (Málaga)
+                            Calle Jacinto Benavente, <br/> Nº 429640 Fuengirola (Málaga)
                         </Text>
                     </Box>
                     <Box className=" flex flex-row">
@@ -32,7 +32,9 @@ export default function Footer() {
                         <Text className=" text-xs pl-1">solexhomes@gmail.com</Text>
                     </Box>
                 </Box>
-                <Image className=" w-1/3" src={heroImage} alt="logo" />
+                <Box className=" w-1/3">
+                    <Image style={{maxWidth: 390, maxHeight: 200}} src={solexlogo} alt="logo" />
+                </Box>
                 <Box className=" w-1/3 flex flex-col items-end">
                     <Heading size="6" as="h2" className=" pb-4">FOLLOW US</Heading>
                     <Box className=" flex flex-row gap-3">

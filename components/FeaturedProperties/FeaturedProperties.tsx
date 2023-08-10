@@ -9,7 +9,7 @@ export default function FeaturedProperties() {
             <Heading as='h2' size='7'>
                 Featured Properties
             </Heading>
-            <Grid className=' pt-4' columns='1' gap='3' width='auto'>
+            <Grid className=' pt-4' columns='1' gap='6' width='auto'>
                 <Box height='auto'>
                     <FeaturedCard />
                 </Box>

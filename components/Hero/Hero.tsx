@@ -12,19 +12,6 @@ export default function Hero() {
             <div className=" h-full w-1/3 bg-neutral-900 p-5 flex flex-col justify-start pt-5 pb-5">
                 <Heading size="7" as="h3" className="text-white">Search Properties</Heading>
                 <form action="/send-data" method="post" className=" gap-3 pt-5 pb-6 flex flex-col">
-                    <div className=" w-full flex flex-row gap-2.5">
-                        <input className=" w-1/2 pl-2 h-10 rounded-sm" type="text" placeholder="Reference" name="name" id="name" />
-                        <Select.Root size="3">
-                            <Select.Trigger className=" w-1/2" radius="small" placeholder="Offer" />
-                            <Select.Content>
-                                <Select.Group>
-                                    <Select.Label>Fruits</Select.Label>
-                                    <Select.Item value="orange">Orange</Select.Item>
-                                    <Select.Item value="apple">Apple</Select.Item>
-                                </Select.Group>
-                            </Select.Content>
-                        </Select.Root>
-                    </div>
                     <Select.Root size="3">
                         <Select.Trigger radius="small" placeholder="Area" />
                         <Select.Content>

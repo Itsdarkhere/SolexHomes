@@ -1,6 +1,7 @@
 import { Heading } from "@radix-ui/themes";
 import heroImage from "../public/hero.jpg";
 import Image from "next/image";
+import solex from "../public/solex.png"
 
 export default function HolidayRentals() {
 
@@ -9,7 +10,7 @@ export default function HolidayRentals() {
             <Heading as='h2' size='7'>
                 Holiday Rentals
             </Heading>
-            <Image className=" pt-4 rounded-md" style={{height: 440}} src={heroImage} alt="Rentals page" />
+            <Image className=" pt-4 rounded-md" src={solex} alt="Rentals page" />
         </div>
     )
 }
