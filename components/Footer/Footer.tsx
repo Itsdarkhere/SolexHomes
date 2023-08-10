@@ -26,7 +26,7 @@ export default function Footer() {
                     </Box>
                 </Box>
             </Box>
-            <Box className=" flex flex-row gap-4 pt-4">
+            <Box className=" flex flex-row justify-between gap-4 pt-4">
                 <Text className=" text-xs">Copyright @ 2023. All rights reserved.</Text>
                 <Box className="flex flex-row gap-2 text-xs">
                     <Link href="/legal">Legal Info</Link>
