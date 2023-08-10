@@ -3,11 +3,11 @@ import PropertyCard from "../PropertyCards/PropertyCard";
 
 export default function LatestProperties() {
   return (
-    <div className=' w-full h-auto p-5'>
-      <Heading as='h2' size='8'>
+    <div className=' w-full main h-auto pt-8 pb-8'>
+      <Heading as='h2' size='7'>
         Latest Properties
       </Heading>
-      <Grid className=' pt-3' columns='2' gap='3' width='auto'>
+      <Grid className=' pt-4' columns='2' gap='4' width='auto'>
         <Box height='auto'>
           <PropertyCard />
         </Box>
