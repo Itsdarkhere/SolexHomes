@@ -2,6 +2,7 @@
 import Image from "next/image";
 import heroImage from "../../public/hero.jpg";
 import { Button, Select, Heading, Section, Flex, Box } from "@radix-ui/themes";
+import CustomSelect from "../CustomSelect";
 
 
 export default function Hero() {
@@ -24,28 +25,10 @@ export default function Hero() {
                     </Select.Root>
                     <Flex gap="2">
                         <Box className=" w-1/2">
-                            <Select.Root size="3">
-                                <Select.Trigger className=" w-full" radius="small" placeholder="Property Type" />
-                                <Select.Content>
-                                    <Select.Group>
-                                        <Select.Label>Fruits</Select.Label>
-                                        <Select.Item value="orange">Orange</Select.Item>
-                                        <Select.Item value="apple">Apple</Select.Item>
-                                    </Select.Group>
-                                </Select.Content>
-                            </Select.Root>
+                            <CustomSelect classes=" w-full" />
                         </Box>
                         <Box className=" w-1/2">
-                            <Select.Root size="3">
-                                <Select.Trigger className=" w-full" radius="small" placeholder="Bedrooms" />
-                                <Select.Content>
-                                    <Select.Group>
-                                        <Select.Label>Fruits</Select.Label>
-                                        <Select.Item value="orange">Orange</Select.Item>
-                                        <Select.Item value="apple">Apple</Select.Item>
-                                    </Select.Group>
-                                </Select.Content>
-                            </Select.Root>
+                            <CustomSelect classes=" w-full" />
                         </Box>
                     </Flex>
                     <div className="flex flex-row gap-2">

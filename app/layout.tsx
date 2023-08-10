@@ -25,6 +25,7 @@ export default function RootLayout({
         <Theme>
           <TopHeader />
           <BottomHeader />
+          <div style={{height: 120}}></div>
           {children}
           <Footer />
         </Theme>
