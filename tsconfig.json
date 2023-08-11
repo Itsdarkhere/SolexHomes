@@ -29,6 +29,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/PropertyCards"
-  ],
+, "components/Map.jsx"  ],
   "exclude": ["node_modules"]
 }
