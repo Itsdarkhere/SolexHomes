@@ -1,3 +1,4 @@
+import CustomSelect from "@/components/CustomSelect";
 import FollowUsBox from "@/components/FollowUsBox";
 import SearchCard from "@/components/PropertyCards/SearchCard";
 import SlimSearchBox from "@/components/Search/SlimSearchBox";
@@ -14,22 +15,23 @@ export default function Properties() {
             </div>
             <div className="main flex flex-row pt-7 pb-7">
                 <div className=" w-3/4 flex flex-col pr-3 pl-3">
-                    <div className=" mb-3">
-                        <p className=" text-xl font-semibold">Search performed:</p>
-                        <p className=" text-xs">Malaga, Sale</p>
-                    </div>
-                    <div className=" border-t flex flex-row justify-between mb-6">
-                        <div className=" flex flex-row gap-2">
-                            <p>X</p>
-                            <p>X</p>
+                    <div className=" mb-3 pb-3 flex border-b flex-row justify-between">
+                        <div>
+                            <p className=" text-xl font-semibold">Search performed:</p>
+                            <p className=" text-xs">Malaga, Sale</p>
                         </div>
                         <div className=" flex flex-row gap-2">
-                            <p>Sort by:</p>
-                            <p>X</p>
-                            <p>X</p>
+                            <p className=" flex items-center text-xs">Sort by:</p>
+                            <CustomSelect classes="" />
                         </div>
                     </div>
-                    <Grid columns="2" gap="5">
+                    {/* <div className=" border-t flex flex-row justify-end mb-6">
+                        <div className=" flex flex-row gap-2 pt-2">
+                            <p className=" flex items-center text-xs">Sort by:</p>
+                            <CustomSelect classes="" />
+                        </div>
+                    </div> */}
+                    <Grid columns="2" gap="5" className=" border-b-2 pb-4">
                         <SearchCard />
                         <SearchCard />
                         <SearchCard />

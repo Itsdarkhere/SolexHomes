@@ -9,7 +9,7 @@ export default function SearchCard() {
 
     return (
         <Card variant="classic">
-            <Image src={heroImage} alt="hero" />
+            <Image src={heroImage} alt="hero" className=" rounded" />
             <div className=" flex flex-col pt-4 pb-2">
                 <div className=" h-32 flex flex-col">
                     <Text size="4" weight="bold" className=" pb-1">Sea front 4 bedrooms</Text>

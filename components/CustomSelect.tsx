@@ -1,4 +1,4 @@
-
+'use client'
 import { Select } from "@radix-ui/themes";
 
 export default function CustomSelect({ ...props }) {
