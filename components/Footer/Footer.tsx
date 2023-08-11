@@ -49,7 +49,7 @@ export default function Footer() {
                 <Text className=" text-xs">Copyright @ 2023. All rights reserved.</Text>
                 <Box className="flex flex-row gap-1 text-xs text-orange-300 underline">
                     <Link href="/legal">Legal Info</Link>
-                    <Link href="/Privacy" className=" border-l pl-1 border-black">Privacy Policy</Link>
+                    <Link href="/privacy" className=" border-l pl-1 border-black">Privacy Policy</Link>
                     <Link href="/cookies" className=" border-l pl-1 border-black">Cookies Policy</Link>
                 </Box>
             </Box>
