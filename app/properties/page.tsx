@@ -25,12 +25,6 @@ export default function Properties() {
                             <CustomSelect classes="" />
                         </div>
                     </div>
-                    {/* <div className=" border-t flex flex-row justify-end mb-6">
-                        <div className=" flex flex-row gap-2 pt-2">
-                            <p className=" flex items-center text-xs">Sort by:</p>
-                            <CustomSelect classes="" />
-                        </div>
-                    </div> */}
                     <Grid columns="2" gap="5" className=" border-b-2 pb-4">
                         <SearchCard />
                         <SearchCard />
